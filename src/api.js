@@ -44,3 +44,14 @@ export const popularGamesURL = () => `${base_url}${popular_games}`;
 export const upcomingGamesUrl = () => `${base_url}${upcoming_games}`;
 export const newGamesUrl = () => `${base_url}${new_games}`;
 // console.log(popularGamesURL());
+
+//GAME DETAILS
+export const gameDetailsURL = (game_id) => `${base_url}games/${game_id}`;
+
+//GAME SCREENSHOTS
+export const gameScreenShotURL = (game_id) =>
+  `${base_url}games/${game_id}/screenshots?key=${apiKey}`;
+
+//Searched game
+export const searchGameURL = (game_name) =>
+  `${base_url}games?search=${game_name}&page_size=9`;
